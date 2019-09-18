@@ -1,0 +1,17 @@
+---
+title: "my_brilliant_paper"
+author: "Saras Windecker"
+date: "18/09/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+decay <- read.csv('data/decay_data.csv')
+library(ggplot2)
+ggplot(decay, aes(x = t, y = mass_rem)) + geom_point()
+```
